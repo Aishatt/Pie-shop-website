@@ -89,10 +89,10 @@ display: block;
 footer {
     clear: both;
     width: 100%;
-    background: rgba(241, 222, 222, 0.616);
+    background: rgba(241, 222, 222, 0.281);
     color: rgb(109, 108, 108);
 }
 
 footer .foot {
-    padding: 10px 25px;
+    padding: 10px 15px;
 }
