@@ -10,7 +10,24 @@
     <title>My pie shop</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+    <script>
+        function save() { //global function
+            localStorage.setItem("applepie", true);
+        }
+        window.onload = function () { //when the windows run,the code below will execute
+            var favorite = document.getElementById('fav'); // from our html code waiting for interaction
 
+            if (window.localStorage) { //condition
+                var storage = window.localStorage;
+
+                if (storage.getItem('applepie') == 'true') { //if true then update html
+                    favorite.innerHTML = "Apple pie is one of your favorites";
+
+                }
+            }
+        }
+
+    </script>
 </head>
 
 <body>
@@ -38,8 +55,11 @@
                 Apple pie
             </h1>
             <figure>
-                <img src="images/products/applepie.jpg" width="95%">
+                <img src="images/products/applepie.jpg" target="_blank" width="95%">
                 <figcaption>Our world-famous apple pie </figcaption>
+                <br>
+                <button type="button" onclick="save()">Save to favorite</button>
+                <span id="fav"></span>
                 <article id="description">
                     <section>
                         <p>Price: $12.95</p>
