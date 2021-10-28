@@ -10,43 +10,71 @@ body {
     background: rgb(155, 124, 173);
   
 }
-
 #head img {
     margin-left: 25px;
     width: 50px;
 }
 #search-box{
-padding: 3px;
-text-align: center;
-}
-#main {
-    line-height: 22px;
-    width: 70%;
-    float: right;
-    margin-bottom: 20px;
+width: 10rem;
+align-self: center;
+
 }
 
-#left {
-    width: 30%;
-    float: left;
-    min-height: 500px;
+.mainContent{
+
+    margin-left: 200px;
+    margin-right: 50px;
+    display: flex;
+}
+#main{
+    flex-wrap: wrap;
+    margin: 0 20px;
+}
+#left{
+    
+    background-color: cadetblue;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+   
+}
+.menu{
+    background-color: rgb(3, 48, 66);
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
     text-align: center;
     
 }
+.menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+    
+}
+
 #left> ul{
     list-style-type: none;
+    padding-inline-start: 0;
+    margin-right: 0;
   
 }
 #left> ul>li{
-    margin-right:28px ;
+   padding: 10px;
+   text-align: left;
 }
 #left> ul>li>a{
-     color: rgb(4, 55, 71);
-   font-weight: bold;
-   display: block;
-   padding: 5px;
-   text-decoration: underline;
+     background-color: rgb(3, 48, 66);
+   
+display: block;
+   color: white;
+   padding:0px 10px;
+   text-decoration: none;
+ 
+}
+#left> ul>li>a:hover{
+    color: thistle;
 }
 table,
 td,
@@ -87,12 +115,81 @@ display: block;
     font-weight: bold;
 }
 footer {
-    clear: both;
-    width: 100%;
-    background: rgba(241, 222, 222, 0.281);
-    color: rgb(109, 108, 108);
+    display: flex;
+    
+    color: rgb(98, 97, 97);
 }
-
+.foot > p , .foot > address {
+    margin: .5rem ;
+  
+}
 footer .foot {
     padding: 10px 15px;
+    margin-left: 11rem ;
+}
+#testPie{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     width: 70%;
+     text-align: center;
+     background: rgb(236, 99, 99);
+    
+
+}
+.testPie{
+    background: white;
+   border: 2px solid rgba(190, 215, 248, 0.308);
+    box-shadow:  2px 3px rgba(0, 0, 0, 0.308);
+  flex-wrap:wrap ;
+    display: flex;
+   flex-direction: row;
+    margin: 10px 20px;
+   justify-content: space-between;
+   align-items: center;
+}
+#cheesecake{
+    display: flex;
+    margin: 0 20px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.cheese{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(236, 99, 99);
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.308);
+    margin: .5rem;
+    align-items: center;
+}
+.cheese>h4 , .cheese>p{
+    margin: 1px 0px;
+}
+.cheeserow>h4 ,.cheeserow>p{
+    margin: .4rem;
+    padding: 5px;
+}
+.cheeserow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 600px) {
+    #left{
+        order: 1;
+    }
+    
+}
+#foot > .footnew{
+    padding: 0px;
+    margin-left: 3rem ;
+    align-items: center; 
+}
+#foot{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(32, 32, 32);
+    margin-top: 2rem;
 }
