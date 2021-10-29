@@ -1,2 +1,2 @@
 #MyWebsite
-This is my new project (A pie-shop website)
+This is my new project (A responsive pie-shop website)
