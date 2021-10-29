@@ -4,6 +4,7 @@ body {
     margin-right: auto;
     background: url(images/pattern.png);
     background-repeat: repeat;
+    justify-items: center;
 }
 
 #head {
@@ -22,8 +23,7 @@ align-self: center;
 
 .mainContent{
 
-    margin-left: 200px;
-    margin-right: 50px;
+    justify-content: center;
     display: flex;
     
 }
@@ -41,7 +41,7 @@ align-self: center;
 }
 .menu{
     background-color: rgb(3, 48, 66);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     width: 150px;
@@ -61,7 +61,7 @@ align-self: center;
   
 }
 #left> ul>li{
-   padding: 10px;
+   padding: 5px;
    text-align: left;
 }
 #left> ul>li>a{
@@ -158,9 +158,10 @@ footer .foot {
     margin-right: 20px;
     display: flex;
     flex-direction: column;
-    background: rgb(236, 99, 99);
+    background: rgb(252, 231, 231);
     box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.308);
     margin: .5rem;
+    flex-grow: 2;
     align-items: center;
 }
 .cheese>h4 , .cheese>p{
@@ -185,17 +186,26 @@ footer .foot {
         
         margin: 0 10px;
     }
+    #left>img{
+        width: 60%;
+        margin-top: 20px;
+    }
     #left{
         flex-wrap: wrap-reverse;
         align-items: center;
         display: flex;
         flex-direction: column;
     }
+    #overview{
+        margin: 0 10px;
+    }
      .mainContent{
-        width: 50%;
-        margin-left: 10%;flex-wrap: wrap;
+        flex-wrap: wrap;
      }
-    
+     footer .foot {
+        padding: 10px 5px;
+        margin-left: 1rem ;
+    }
 }
  
    
